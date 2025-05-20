@@ -11,6 +11,12 @@ body {
   background-color: #f4f7fa;
   color: #333;
   padding: 20px;
+  animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .container {
@@ -20,12 +26,19 @@ body {
   background: white;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  animation: slideUp 1s ease-in-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
 header {
   text-align: center;
   padding-bottom: 20px;
   border-bottom: 1px solid #ddd;
+  animation: fadeIn 2s ease;
 }
 
 header h1 {
@@ -50,6 +63,7 @@ header img {
 
 section {
   margin-top: 30px;
+  animation: fadeIn 2s ease;
 }
 
 section h2 {
@@ -80,4 +94,5 @@ footer {
   margin-top: 40px;
   font-size: 0.9rem;
   color: #888;
+  animation: fadeIn 2s ease;
 }
